@@ -1,0 +1,59 @@
+.main {
+  background: transparent url("../images/bg.jpg") no-repeat scroll center center / cover;
+  width: 100%;
+  height: 100%;
+  display: table;
+
+  img{
+    border-radius: 100%;
+    width: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    display: table-cell;
+  }
+
+  h1,h3{
+    text-shadow: 0 0 20px white;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+
+  hr{
+    width: 50%;
+    min-width: 300px;
+  }
+
+  .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.img-container {
+    overflow: hidden;
+    .spotlight>&{
+      max-height: 450px;
+    }
+    .list>&{
+      height: 300px;
+      margin-bottom: 50/450*300px;
+      
+    }
+    img{
+      cursor: pointer;
+    }
+}
+
+.spotlight{
+  margin-bottom: 50px;
+}
+
+.portofolio {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

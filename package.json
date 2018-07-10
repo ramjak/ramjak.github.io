@@ -1,0 +1,22 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "Rama Jakaria - Portofolio",
+  "main": "app.js",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap-sass": "node-sass --include-path scss bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss bower_components/bootstrap-sass/assets/stylesheets/bootstrap.css",
+    "custom-sass": "node-sass --include-path scss stylesheets/_custom.scss stylesheets/custom.css",
+    "watch-scss": "nodemon -e scss -x \"npm run bootstrap-sass && npm run custom-sass\""
+  },
+  "keywords": [
+    "portofolio",
+    "rama-jakaria"
+  ],
+  "author": "RamJak <rama.jakaria@gmail.com>",
+  "license": "MIT"
+}
