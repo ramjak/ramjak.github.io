@@ -51,7 +51,7 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
       'date': "August 2016"
     }
   ];
-  $scope.spotlight = $scope.projects[2];
+  $scope.spotlight = $scope.projects[3];
   $scope.setSpotlight = function(project) {
     $scope.spotlight = project;
   }
