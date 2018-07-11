@@ -4,7 +4,7 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
   $scope.projects = [
     {
       'name': 'Smart Pollution Monitoring System',
-      'description': "This system help monitoring and mapping city's current air pollution. This work will be submitted to PKM - KC. My role is to create a system to retrieve air pollution data from microcontroller and pointing its location to map.",
+      'description': "This system help monitoring and mapping city's current air pollution. My role is to create a system to retrieve air pollution data from microcontroller and pointing its location to map.",
       "image": "images/wartechs.jpg",
       "date": "March 2015"
     },
@@ -16,7 +16,7 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
     // },
     {
       'name': "Anava #9 ",
-      'description': "Developing a homepage and online test system for a competition held by Himpunan Mahasiswa Statistik, Gadjah Mada University. I am working for registration, content and design.",
+      'description': "Developing a homepage and online test system for a competition held by Himpunan Mahasiswa Statistik, Gadjah Mada University. I was working for registration, content and design.",
       "image": "images/anava-9.jpg",
       "date": "November 2014"
     },
@@ -40,9 +40,15 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
     // },
     {
       'name': "Coanalis",
-      'description': "Freelancer website for data analyst. Here, people can get their ideal solution by choosing the right analyst.",
+      'description': "Freelancer website for data analyst. Here, people can get their ideal solution by choosing the right analyst. My role is to develop a fully working website from the converting design from psd until the deployment",
       'image': "images/coanalis.jpg",
       'date': "November 2015"
+    },
+    {
+      'name': "Directory SMUPreneurs",
+      'description': "Developing and bugfixing a networking website for Singapore Management University using Laravel",
+      'image': "images/SMUpreneurs.png",
+      'date': "August 2016"
     }
   ];
   $scope.spotlight = $scope.projects[2];
