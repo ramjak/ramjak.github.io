@@ -24,7 +24,13 @@
       <h2 class="" id="spotlight">{{spotlight.name}} <small class="text-right">{{spotlight.date}}</small></h2>
       <hr>
       <div class="row spotlight">
-        <div class="img-container col-lg-8"><img ng-src="{{spotlight.image}}" alt="" class="img-responsive"></div>
+        <div class="col-lg-8">
+          <div class="img-container">
+            <div>
+              <img ng-src="{{spotlight.image}}" alt="" class="img-responsive" />
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4">
           <h4>Project Description</h4>
           <p>
@@ -34,7 +40,11 @@
         <div class="clearfix"></div>
       </div><br><br>
       <div class="row list">
-        <div class="col-lg-4 col-md-6 col-sm-6 img-container" ng-repeat="project in projects"><a href="#spotlight"><img ng-src="{{project.image}}" alt="" class="img-responsive" ng-click="setSpotlight(project)"></a></div>
+        <div class="col-lg-4 col-md-6 col-sm-6" ng-repeat="project in projects">
+          <div class="img-container">
+            <a href="#spotlight"><img ng-src="{{project.image}}" alt="" class="img-responsive" ng-click="setSpotlight(project)"></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -50,7 +60,11 @@
             <h4 class="modal-title">{{spotlight.name}}</h4>
           </div>
           <div class="modal-body">
-            <div class="img-container"><img ng-src="{{spotlight.image}}" alt="" class="img-responsive"></div>
+            <div class="img-container">
+              <div>
+                <img ng-src="{{spotlight.image}}" alt="" class="img-responsive">
+              </div>
+            </div>
           </div>
         </div>
       </div>

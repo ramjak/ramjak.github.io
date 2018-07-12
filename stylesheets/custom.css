@@ -24,10 +24,14 @@
     vertical-align: middle; }
 
 .img-container {
-  overflow: hidden; }
-  .spotlight > .img-container {
-    max-height: 450px; }
-  .list > .img-container {
+  overflow: hidden;
+  box-shadow: 1px 1px 10px 0 #888888;
+  display: flex; }
+  .img-container a {
+    margin: auto; }
+  .spotlight .img-container {
+    height: 450px; }
+  .list .img-container {
     height: 300px;
     margin-bottom: 33.33333px; }
   .img-container img {

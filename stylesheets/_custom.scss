@@ -75,13 +75,19 @@
 
 .img-container {
     overflow: hidden;
-    .spotlight>&{
-      max-height: 450px;
+    box-shadow: 1px 1px 10px 0 #888888;
+    display: flex;
+
+    a {
+      margin: auto;
     }
-    .list > & {
+
+    .spotlight & {
+      height: 450px;
+    }
+    .list & {
       height: 300px;
       margin-bottom: 50/450*300px;
-      
     }
     img {
       cursor: pointer;
