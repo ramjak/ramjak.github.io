@@ -52,7 +52,7 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
     },
     {
       'name': "Sentiment Analysis Dashboard",
-      'description': "This dashboard helping the process of sentiment analysis to extract, and study the affective states from subjective information in the twitter.",
+      'description': "This dashboard helping the process of sentiment analysis to extract, and study the affective states from subjective information in the twitter. This website is built with Angular.js, Flask and MongoDB.",
       'image': "images/AnalisisSentimen.png",
       'date': "Juli 2018"
     }
