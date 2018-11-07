@@ -49,6 +49,12 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
       'description': "Developing and bugfixing a networking website for Singapore Management University using Laravel",
       'image': "images/SMUpreneurs.png",
       'date': "August 2016"
+    },
+    {
+      'name': "Sentiment Analysis Dashboard",
+      'description': "This dashboard helping the process of sentiment analysis to extract, and study the affective states from subjective information in the twitter.",
+      'image': "images/AnalisisSentimen.png",
+      'date': "Juli 2018"
     }
   ];
   $scope.spotlight = $scope.projects[3];
