@@ -55,6 +55,12 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
       'description': "This dashboard helping the process of sentiment analysis to extract, and study the affective states from subjective information in the twitter. This website is built with Angular.js, Flask and MongoDB.",
       'image': "images/AnalisisSentimen.png",
       'date': "Juli 2018"
+    },
+    {
+      'name': "Wideboard",
+      'description': 'Wideboard  is  a  chat messenger  with  built-in  productivity  tools  that help  the  user to collaborate with co-worker easier. As Front-End Lead, my job is to plan and implement the project architecture based on spec, converting PDF design into React Component and establish a workflow that fit the team.',
+      image: "images/wideboard.png",
+      date: "February 2018",
     }
   ];
   $scope.spotlight = $scope.projects[3];
