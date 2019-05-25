@@ -51,6 +51,12 @@ portofolio.controller('ProjectListCtrl', function ($scope) {
       'date': "August 2016"
     },
     {
+      'name': "Iwak.me Sales Management",
+      'description': "This website is a system admin that helps user track delivery of fish from farms to restaurants, manage restaurant, courier, and fish farm that involved. There is 4 person in charge of this project, 2 front-end developer, 1 back-end developer and 1 designer. My responsibility includes: converting PDF to working react-component, move server state to client state, sync both states using WebSocket.",
+      'image': "images/iwak.png",
+      'date': "Mei 2018"
+    },
+    {
       'name': "Sentiment Analysis Dashboard",
       'description': "This dashboard helping the process of sentiment analysis to extract, and study the affective states from subjective information in the twitter. This website is built with Angular.js, Flask and MongoDB.",
       'image': "images/AnalisisSentimen.png",
