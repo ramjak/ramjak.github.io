@@ -1,0 +1,127 @@
+$spacing: 16px;
+
+.intro {
+  position: relative;
+  //border-right: 1px solid lightgray;
+  background: #3270fe;
+  background: linear-gradient(337deg, #195efe 0%, #3270fe 50%, #4b82fe 100%);
+  color: #eeeeee;
+  height: 100vh;
+  h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 56px;
+    margin-bottom: 0;
+    margin-left: -72px;
+  }
+  .headline {
+    position: relative;
+    left: 36px;
+    top: -32px;
+    @media only screen and (max-width: 1380px)
+    {
+      h1 {
+        font-size: 40px;
+        margin-left: -52px;
+      }
+      left: 26px;
+    }
+    @media only screen and (max-width: 1051px) {
+      h1 {
+        font-size: 32px;
+        margin-left: -41px;
+      }
+      left: 20px;
+    }
+    @media only screen and (max-width: 899px) {
+      h1 {
+        font-size: 56px;
+        margin-left: -72px;
+      }
+      left: 36px;
+    }
+    @media only screen and (max-width: 636px) {
+      h1 {
+        font-size: 40px;
+        margin-left: -52px;
+      }
+      left: 26px;
+    }
+    @media only screen and (max-width: 550px) {
+      h1 {
+        font-size: 32px;
+        margin-left: -41px;
+      }
+      left: 20px;
+    }
+    @media only screen and (max-width: 450px) {
+      h1 {
+        font-size: 28px;
+        margin-left: -36px;
+      }
+      left: 18px;
+    }
+  }
+  p {
+    margin-top: 4px;
+    font-size: 24px;
+  }
+  .download {
+    position: relative;
+    border-color: #eeeeee;
+    border-radius: 0;
+    color: inherit;
+    width: fit-content;
+    left: -2px;
+    bottom: -48px;
+    @media only screen and (max-width: 350px) {
+      bottom: -24px;
+    }
+  }
+  .contacts {
+    position: absolute;
+    bottom: $spacing;
+    right: $spacing;
+    a {
+      display: block;
+      line-height: 24px;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+    svg {
+      vertical-align: bottom;
+    }
+  }
+}
+
+.nav {
+  //box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  //clip-path: inset(0px -15px 0px 0px);
+  position: absolute;
+  padding: $spacing;
+  top: 0;
+  left: 0;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      display: inline-block;
+    }
+  }
+  button {
+    padding: 4px 16px;
+    display: block;
+    width: 100%;
+    text-transform: none;
+    color: inherit;
+    font-size: inherit;
+  }
+  @media only screen and (max-width: 375px) {
+    padding: 8px;
+    button {
+      padding: 4px 8px;
+    }
+  }
+}

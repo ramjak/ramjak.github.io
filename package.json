@@ -1,22 +1,52 @@
 {
-  "name": "portofolio",
-  "version": "1.0.0",
-  "description": "Rama Jakaria - Portofolio",
-  "main": "app.js",
-  "devDependencies": {
-    "node-sass": "^4.13.1",
-    "nodemon": "^1.8.1"
-  },
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "bootstrap-sass": "node-sass --include-path scss bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss bower_components/bootstrap-sass/assets/stylesheets/bootstrap.css",
-    "custom-sass": "node-sass --include-path scss stylesheets/_custom.scss stylesheets/custom.css",
-    "watch-scss": "nodemon -e scss -x \"npm run bootstrap-sass && npm run custom-sass\""
+    "dev": "next dev",
+    "build": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "portofolio",
-    "rama-jakaria"
-  ],
-  "author": "RamJak <rama.jakaria@gmail.com>",
-  "license": "MIT"
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.1",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-page-scroller": "^2.2.1",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.22",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-deprecation": "^1.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint -c .eslintrc.precommit.js . --fix"
+    ],
+    "**/*.{json,css,scss,md}": [
+      "prettier --single-quote --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }

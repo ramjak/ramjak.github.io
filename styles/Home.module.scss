@@ -1,0 +1,176 @@
+$spacing: 16px;
+
+.container {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.main {
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: #242325;
+  color: #dddddd;
+  position: relative;
+  .page {
+    min-height: 100vh;
+  }
+}
+
+.aboutMe {
+  padding: $spacing * 8;
+  height: 100%;
+  position: relative;
+  button {
+    position: absolute;
+    bottom: $spacing * 2;
+    text-align: center;
+    text-transform: none;
+    font-size: 16px;
+    display: inline;
+    color: inherit;
+  }
+  @media only screen and (max-width: 970px) and (min-width: 900px) {
+    padding: 64px;
+  }
+  @media only screen and (max-width: 550px) {
+    padding: $spacing * 2;
+    button {
+      bottom: $spacing;
+    }
+  }
+  .greetings {
+    font-size: 2rem;
+  }
+  .desc {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .imgContainer {
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+    min-width: 75px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 64px;
+}
+
+.skills {
+  padding: 128px;
+  @media only screen and (max-width: 1199px) {
+    padding: 96px;
+  }
+  @media only screen and (max-width: 550px) {
+    padding: 32px;
+  }
+}
+
+.portfolio {
+  padding: 64px 64px 32px 96px;
+  @media only screen and (max-width: 550px) {
+    padding: 32px 32px 16px 32px;
+  }
+  h2 {
+    //margin-bottom: 32px;
+    width: 100%;
+  }
+  .group {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+  .slider {
+    transition: left 0.5s;
+    position: relative;
+  }
+  .projectsPage {
+    width: 100%;
+    margin-left: 0;
+    display: inline-flex;
+  }
+  .pagination {
+    width: 144px;
+    margin-top: 32px;
+    margin-left: 32px;
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    li {
+      border: 1px solid white;
+      display: none;
+      &:first-child,  &:last-child{
+        display: block;
+      }
+    }
+    button {
+      color: #dddddd;
+    }
+  }
+}
+
+.highlight {
+  color: #eeeeee;
+  padding: 128px 128px 64px 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media only screen and (max-width: 899px) {
+    padding: 64px;
+    img {
+      width: 100vw;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    padding: 64px 32px 32px 32px;
+    img {
+      width: 100vw;
+    }
+  }
+  & > div:focus-visible {
+    outline: 0;
+  }
+  .meta {
+    height: fit-content;
+    position: sticky;
+    top: -32px;
+    white-space: pre-line;
+    @media only screen and (max-width: 1199px) {
+      position: static;
+    }
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .date {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 20px;
+    //font-size: 16px;
+  }
+  .desc {
+    line-height: 1.25;
+    font-size: 20px;
+  }
+  .closeButton {
+    position: fixed;
+    color: #eeeeee;
+    top: $spacing;
+    right: $spacing;
+  }
+}

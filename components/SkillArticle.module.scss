@@ -1,0 +1,54 @@
+.skill {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+  .skillDesc {
+    float: left;
+    margin-bottom: 6px;
+    img {
+      width: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+  .years {
+    float: right;
+    margin-bottom: 4px;
+  }
+  .actionContainer {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .neutralBtn {
+    padding: 0;
+    min-width: 0;
+    display: inline-block;
+    color: inherit;
+  }
+}
+.certList {
+  text-align: left;
+  font-size: 16px;
+  .container {
+    padding-bottom: 16px;
+    padding-top: 4px;
+  }
+  .testName {
+    flex-grow: 1;
+  }
+  svg {
+    font-size: 16px;
+    margin-left: 2px;
+    margin-right: 10px;
+    vertical-align: bottom;
+  }
+  a {
+    display: flex;
+    margin-top: 4px;
+  }
+}
+.clearfix {
+  clear: both;
+}
