@@ -102,7 +102,7 @@ const Home: NextPage<IHome> = ({ projects, skills }) => {
           >
             <div className={styles.imgContainer}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/photo.jpeg" alt="" width="200" height="200" />
+              <img src="/photo.webp" alt="" width="200" height="200" />
             </div>
             <p className={styles.greetings}>Hello, there! 👋</p>
             <p className={styles.desc}>

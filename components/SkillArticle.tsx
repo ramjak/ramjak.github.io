@@ -25,7 +25,7 @@ const SkillArticle = ({ skill, isShowCert, onDetailClick }: ISkillArticle) => {
         <Grid item={true} flexGrow={1}>
           <div className={styles.skillDesc}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`/${skill.logoUrl}`} alt="" />
+            <img src={`/${skill.logoUrl}`} alt="" width={20} height={20} />
             {skill.name}
           </div>
           <div className={styles.years}>{skill.experience} years</div>

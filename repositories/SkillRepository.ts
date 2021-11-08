@@ -8,7 +8,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       {
         name: "Javascript",
         experience: 5,
-        logoUrl: "js.png",
+        logoUrl: "js.webp",
         tests: [
           {
             name: "Pluralsight Skill IQ test",
@@ -19,7 +19,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       {
         name: "Typescript",
         experience: 1.5,
-        logoUrl: "ts.png",
+        logoUrl: "ts.webp",
         tests: [
           {
             name: "Typescript Design Pattern course",
@@ -30,7 +30,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       {
         name: "React.js",
         experience: 5,
-        logoUrl: "react.png",
+        logoUrl: "react.webp",
         tests: [
           {
             name: "Pluralsight Skill IQ test",
@@ -41,7 +41,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       {
         name: "HTML5",
         experience: 5,
-        logoUrl: "html5.png",
+        logoUrl: "html5.webp",
         tests: [
           {
             name: "Pluralsight Skill IQ test",
@@ -52,7 +52,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       {
         name: "CSS3",
         experience: 5,
-        logoUrl: "css3.png",
+        logoUrl: "css3.webp",
         tests: [
           {
             name: "Pluralsight Skill IQ test",
@@ -63,7 +63,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       {
         name: "Git",
         experience: 5,
-        logoUrl: "git.png",
+        logoUrl: "git.webp",
         tests: [
           {
             name: "Pluralsight Skill IQ test",
