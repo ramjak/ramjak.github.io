@@ -6,6 +6,22 @@ export default class ProjectRepository implements IRepository<IProject> {
   public getAll(): Promise<IProject[]> {
     return Promise.resolve([
       {
+        name: "Cast.SG",
+        description:
+          "A digital marketplace where users can purchase digital products and manage their subscriptions on the website. I was mainly working on the purchase and subscription system.\r\n\r\n" +
+          "using Node.js, Nest.js, Postgres, Typescript, React.js",
+        imageUrl: "cast.png",
+        date: "Feb 2022",
+      },
+      {
+        name: "Avarik Saga",
+        description:
+          "Avarik Saga is a JRPG game powered by web3. I was working on token vesting page, leaderboard, faction pages, etc. \r\n\r\n" +
+          "using React.js, Next.js, web3, Ethereum, ethers.js",
+        imageUrl: "avarik.png",
+        date: "Feb 2022",
+      },
+      {
         name: "Pollution Monitoring System",
         description:
           "This system help monitoring and mapping city's current air pollution. My role is to create a system to retrieve air pollution data from microcontroller and pointing its location to map. \r\n\r\n" +
