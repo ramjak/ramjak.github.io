@@ -7,7 +7,7 @@ export default class SkillRepository implements IRepository<ISkill> {
     return Promise.resolve([
       {
         name: "Javascript",
-        experience: 5,
+        experience: 8,
         logoUrl: "js.webp",
         tests: [
           {
@@ -18,7 +18,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       },
       {
         name: "Typescript",
-        experience: 1.5,
+        experience: 5,
         logoUrl: "ts.webp",
         tests: [
           {
@@ -29,7 +29,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       },
       {
         name: "React.js",
-        experience: 5,
+        experience: 7,
         logoUrl: "react.webp",
         tests: [
           {
@@ -40,7 +40,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       },
       {
         name: "HTML5",
-        experience: 5,
+        experience: 8,
         logoUrl: "html5.webp",
         tests: [
           {
@@ -51,7 +51,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       },
       {
         name: "CSS3",
-        experience: 5,
+        experience: 8,
         logoUrl: "css3.webp",
         tests: [
           {
@@ -62,7 +62,7 @@ export default class SkillRepository implements IRepository<ISkill> {
       },
       {
         name: "Git",
-        experience: 5,
+        experience: 8,
         logoUrl: "git.webp",
         tests: [
           {
